@@ -1,45 +1,50 @@
 import React from "react";
 import styled from "styled-components";
 
-const Navicon: React.FC = () => {
+interface Props {
+  color?: string;
+}
+
+const Navicon: React.FC<Props> = ({ color }) => {
   return (
-    <Container>
+    <Container color={color}>
       <div />
     </Container>
   );
 };
 
 const Container = styled.div`
-  height: 24px;
-  width: 20px;
+  margin: 8px;
+  height: 18px;
+  width: 18px;
   z-index: 100;
   background-color: transparent;
   cursor: pointer;
 
   & div {
     position: absolute;
-    background-color: #fff;
+    background-color: ${(props) => (props.color ? props.color : "#fff")};
     height: 1px;
-    width: 20px;
+    width: 18px;
     top: 50%;
   }
 
   & div::before {
     position: absolute;
     content: "";
-    top: -7px;
-    background-color: #fff;
+    top: -6px;
+    background-color: ${(props) => (props.color ? props.color : "#fff")};
     height: 1px;
-    width: 20px;
+    width: 18px;
   }
 
   & div::after {
     position: absolute;
     content: "";
-    top: 7px;
-    background-color: #fff;
+    top: 6px;
+    background-color: ${(props) => (props.color ? props.color : "#fff")};
     height: 1px;
-    width: 20px;
+    width: 18px;
   }
 `;
 

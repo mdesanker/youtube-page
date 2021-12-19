@@ -5,25 +5,17 @@ import Navicon from "./Navicon";
 const Header: React.FC = () => {
   return (
     <HeaderWrapper>
-      {/* <Icon className="fas fa-bars" /> */}
       <Navicon />
     </HeaderWrapper>
   );
 };
-
-const Icon = styled.i`
-  color: white;
-  font-size: 20px;
-  height: 24px;
-  width: 24px;
-`;
 
 const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
   height: 56px;
   width: 100%;
-  background-color: #000;
+  background-color: rgb(52, 52, 52);
   padding: 0 16px;
 
   display: flex;
