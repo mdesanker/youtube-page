@@ -25,6 +25,7 @@ const Button = styled.button`
   font-size: 20px;
   background-color: rgb(80, 80, 80);
   border: 1px solid rgb(80, 80, 80);
+  cursor: pointer;
 `;
 
 const Search = styled.input`

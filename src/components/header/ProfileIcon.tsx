@@ -15,6 +15,7 @@ const Wrapper = styled.button`
   border-radius: 50%;
   border: none;
   background-color: pink;
+  cursor: pointer;
 
   display: flex;
   justify-content: center;
