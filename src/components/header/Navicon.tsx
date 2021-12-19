@@ -13,13 +13,14 @@ const Navicon: React.FC<Props> = ({ color }) => {
   );
 };
 
-const Container = styled.div`
+const Container = styled.button`
   margin: 8px;
   height: 18px;
   width: 18px;
   z-index: 100;
   background-color: transparent;
   cursor: pointer;
+  border: none;
 
   & div {
     position: absolute;
@@ -33,6 +34,7 @@ const Container = styled.div`
     position: absolute;
     content: "";
     top: -6px;
+    left: 0;
     background-color: ${(props) => (props.color ? props.color : "#fff")};
     height: 1px;
     width: 18px;
@@ -42,6 +44,7 @@ const Container = styled.div`
     position: absolute;
     content: "";
     top: 6px;
+    left: 0;
     background-color: ${(props) => (props.color ? props.color : "#fff")};
     height: 1px;
     width: 18px;

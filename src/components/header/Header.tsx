@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Logo from "./Logo";
 import Navicon from "./Navicon";
+import ProfileIcon from "./ProfileIcon";
 import SearchBar from "./SearchBar";
 
 const Header: React.FC = () => {
@@ -10,6 +11,7 @@ const Header: React.FC = () => {
       <Navicon />
       <Logo />
       <SearchBar />
+      <ProfileIcon />
     </HeaderWrapper>
   );
 };
