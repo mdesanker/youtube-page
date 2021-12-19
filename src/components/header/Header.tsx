@@ -2,10 +2,23 @@ import React from "react";
 import styled from "styled-components";
 
 const Header: React.FC = () => {
-  return <HeaderWrapper></HeaderWrapper>;
+  return (
+    <HeaderWrapper>
+      <Icon className="fas fa-bars" />
+    </HeaderWrapper>
+  );
 };
 
+const Icon = styled.i`
+  color: white;
+  font-size: 20px;
+  height: 24px;
+  width: 24px;
+`;
+
 const HeaderWrapper = styled.header`
+  position: fixed;
+  top: 0;
   height: 56px;
   width: 100%;
   background-color: #000;
