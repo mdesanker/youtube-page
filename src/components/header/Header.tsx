@@ -31,6 +31,7 @@ const HeaderWrapper = styled.header`
   width: 100%;
   background-color: rgb(52, 52, 52);
   padding: 0 16px;
+  z-index: 100;
 
   display: flex;
   justify-content: space-between;
