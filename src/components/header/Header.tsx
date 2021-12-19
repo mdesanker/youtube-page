@@ -2,12 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import Logo from "./Logo";
 import Navicon from "./Navicon";
+import SearchBar from "./SearchBar";
 
 const Header: React.FC = () => {
   return (
     <HeaderWrapper>
       <Navicon />
       <Logo />
+      <SearchBar />
     </HeaderWrapper>
   );
 };
