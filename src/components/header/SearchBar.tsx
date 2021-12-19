@@ -29,7 +29,8 @@ const Button = styled.button`
 
 const Search = styled.input`
   height: 40px;
-  width: 350px;
+  // width: 350px;
+  flex-grow: 1;
   background-color: black;
   padding: 10px 15px;
   color: lightgray;
@@ -41,6 +42,8 @@ const Container = styled.form`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30%;
+  min-width: 370px;
 `;
 
 export default SearchBar;

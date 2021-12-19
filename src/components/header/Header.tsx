@@ -8,13 +8,21 @@ import SearchBar from "./SearchBar";
 const Header: React.FC = () => {
   return (
     <HeaderWrapper>
-      <Navicon />
-      <Logo />
+      <Section>
+        <Navicon />
+        <Logo />
+      </Section>
       <SearchBar />
       <ProfileIcon />
     </HeaderWrapper>
   );
 };
+
+const Section = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const HeaderWrapper = styled.header`
   position: fixed;
@@ -25,6 +33,7 @@ const HeaderWrapper = styled.header`
   padding: 0 16px;
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
 `;
 
