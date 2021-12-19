@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import Navicon from "./Navicon";
 
 const Header: React.FC = () => {
   return (
     <HeaderWrapper>
-      <Icon className="fas fa-bars" />
+      {/* <Icon className="fas fa-bars" /> */}
+      <Navicon />
     </HeaderWrapper>
   );
 };
