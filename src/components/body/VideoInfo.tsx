@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import IconBtn from "../elements/IconBtn";
 
 const VideoInfo: React.FC = () => {
   return (
@@ -8,7 +9,9 @@ const VideoInfo: React.FC = () => {
         <Title>Saitama vs Genos Fight | One Punch Main (60FPS)</Title>
         <SubTitle>
           <Views>27,218,848 views &#183; Oct 19, 2016</Views>
-          <BtnContainer></BtnContainer>
+          <BtnContainer>
+            <IconBtn text="309K" icon="far fa-thumbs-up" />
+          </BtnContainer>
         </SubTitle>
       </TitleWrapper>
     </>
