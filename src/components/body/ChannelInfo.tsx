@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import SubscribeBtn from "../elements/SubscribeBtn";
 
 const ChannelInfo: React.FC = () => {
   return (
     <Wrapper>
       <ProfileImg className="far fa-user" />
+      <SubscribeBtn text="subscribe" />
     </Wrapper>
   );
 };
