@@ -8,26 +8,33 @@ interface Props {
 const YoutubeEmbed: React.FC<Props> = ({ embedId }) => {
   return (
     <Wrapper>
-      <iframe
-        width="853"
-        height="480"
-        src={`https://www.youtube.com/embed/${embedId}`}
-        title="Embedded youtube"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
+      <div>
+        <iframe
+          src={`https://www.youtube.com/embed/${embedId}`}
+          title="Embedded youtube"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 480px;
+  max-width: 1000px;
   position: relative;
+  overflow: hidden;
+
+  & div {
+    padding-top: 56.25%;
+    border: 1px solid blue;
+  }
 
   & iframe {
     position: absolute;
+    display: block;
+    border: none;
     left: 0;
     top: 0;
     height: 100%;
