@@ -6,7 +6,7 @@ const VideoInfo: React.FC = () => {
 };
 
 const Wrapper = styled.div`
-  width: 95%;
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   border: 1px solid red;

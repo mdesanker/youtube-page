@@ -24,8 +24,9 @@ const VideoWrapper = styled.div`
 `;
 
 const Wrapper = styled.main`
-  padding-top: 80px;
-  max-width: 1700px;
+  // padding-top: 80px;
+  max-width: 1500px;
+  padding: 80px 20px 0;
   margin: 0 auto;
   display: flex;
   // justify-content: center;
