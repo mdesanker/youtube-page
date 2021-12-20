@@ -1,27 +1,40 @@
 import React from "react";
 import styled from "styled-components";
 import Sidebar from "./Sidebar";
+import VideoInfo from "./VideoInfo";
 import YoutubeEmbed from "./YoutubeEmbed";
 
 const Page: React.FC = () => {
   return (
     <Wrapper>
-      <YoutubeEmbed embedId="km2OPUctni4" />
+      <VideoWrapper>
+        <YoutubeEmbed embedId="km2OPUctni4" />
+        <VideoInfo />
+      </VideoWrapper>
       <Sidebar />
     </Wrapper>
   );
 };
+
+const VideoWrapper = styled.div`
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 const Wrapper = styled.main`
   padding-top: 80px;
   max-width: 1700px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
+  // justify-content: center;
+
   gap: 1rem;
 
   @media (min-width: 1000px) {
     flex-direction: row;
+    justify-content: center;
     align-items: flex-start;
   }
 
