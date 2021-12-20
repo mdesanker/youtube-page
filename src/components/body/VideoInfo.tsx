@@ -11,6 +11,10 @@ const VideoInfo: React.FC = () => {
           <Views>27,218,848 views &#183; Oct 19, 2016</Views>
           <BtnContainer>
             <IconBtn text="309K" icon="far fa-thumbs-up" />
+            <IconBtn text="Dislike" icon="far fa-thumbs-down" />
+            <IconBtn text="Share" icon="fas fa-share" />
+            <IconBtn text="save" icon="fas fa-list" />
+            <IconBtn icon="fas fa-ellipsis-h" />
           </BtnContainer>
         </SubTitle>
       </TitleWrapper>
@@ -18,7 +22,10 @@ const VideoInfo: React.FC = () => {
   );
 };
 
-const BtnContainer = styled.div``;
+const BtnContainer = styled.div`
+  display: flex;
+  gap: 5px;
+`;
 
 const Views = styled.p`
   font-size: 14px;
