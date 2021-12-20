@@ -22,7 +22,6 @@ const YoutubeEmbed: React.FC<Props> = ({ embedId }) => {
 
 const Wrapper = styled.div`
   width: 100%;
-  max-width: 1000px;
   justify-content: center;
   position: relative;
   overflow: hidden;
@@ -40,11 +39,6 @@ const Wrapper = styled.div`
     top: 0;
     height: 100%;
     width: 100%;
-  }
-
-  @media (max-width: 1000px) {
-    width: 100%;
-    margin: 0 auto;
   }
 `;
 
