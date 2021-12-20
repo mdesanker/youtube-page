@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     font-size: 16px;
-    font-family: helvetica, arial, sans-serif;
+    font-family: roboto, helvetica, arial, sans-serif;
   }
 
   body {
