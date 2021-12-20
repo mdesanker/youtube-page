@@ -6,14 +6,14 @@ import YoutubeEmbed from "./YoutubeEmbed";
 const Page: React.FC = () => {
   return (
     <Wrapper>
-      <YoutubeEmbed embedId="ZiOAK7tE3xY" />
+      <YoutubeEmbed embedId="km2OPUctni4" />
       <Sidebar />
     </Wrapper>
   );
 };
 
 const Wrapper = styled.main`
-  padding-top: 90px;
+  padding-top: 80px;
   max-width: 1700px;
   margin: 0 auto;
   display: flex;
@@ -25,7 +25,7 @@ const Wrapper = styled.main`
     align-items: flex-start;
   }
 
-  @media (max-width: 999px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
   }
 `;
