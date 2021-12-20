@@ -6,14 +6,18 @@ const Sidebar: React.FC = () => {
   return (
     <Container>
       <VideoTab />
+      <VideoTab />
     </Container>
   );
 };
 
 const Container = styled.div`
-  min-width: 400px;
+  width: 400px;
   height: 1000px;
-  border: 1px solid red;
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
   @media (max-width: 999px) {
     width: 100%;

@@ -10,9 +10,34 @@ const VideoTab: React.FC<Props> = () => {
         <Image alt="video" />
         <Duration>20:26</Duration>
       </ImgContainer>
+      <DetailsContainer>
+        <Title>
+          ALL ACCESS: Canelo vs. Plant | Epilogue | Here's more text
+        </Title>
+        <Details>SHOWTIME Sports</Details>
+        <Details>1.6M views &#183; 1 month ago</Details>
+      </DetailsContainer>
     </Container>
   );
 };
+
+const Details = styled.p`
+  font-size: 12px;
+  line-height: 18px;
+  color: #606060;
+`;
+
+const Title = styled.h3`
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+`;
+
+const DetailsContainer = styled.div`
+  height: 94px;
+  flex-grow: 1;
+`;
 
 const Image = styled.img`
   position: absolute;
@@ -38,7 +63,6 @@ const ImgContainer = styled.div`
   position: relative;
   width: 168px;
   height: 94px;
-  background-color: pink;
 `;
 
 const Container = styled.div`
@@ -46,8 +70,6 @@ const Container = styled.div`
   height: 94px;
   display: flex;
   gap: 10px;
-
-  border: 1px solid green;
 `;
 
 export default VideoTab;
