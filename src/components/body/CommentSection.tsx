@@ -3,8 +3,11 @@ import styled from "styled-components";
 import IconBtn from "../elements/IconBtn";
 import IconImg from "../elements/IconImg";
 import Comment from "./Comment";
+import comments from "../../assets/catalogs/comments.json";
 
 const CommentSection: React.FC = () => {
+  console.log(comments);
+
   return (
     <Wrapper>
       <CommentHeader>
@@ -21,8 +24,10 @@ const CommentSection: React.FC = () => {
         />
       </AddComment>
       <Comments>
-        <Comment />
-        <Comment />
+        {comments &&
+          comments.map((comment) => {
+            return <Comment key={comment.id} commentDetails={comment} />;
+          })}
       </Comments>
     </Wrapper>
   );

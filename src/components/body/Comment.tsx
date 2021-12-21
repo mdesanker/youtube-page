@@ -3,23 +3,27 @@ import styled from "styled-components";
 import IconBtn from "../elements/IconBtn";
 import IconImg from "../elements/IconImg";
 
-const Comment: React.FC = () => {
+interface Props {
+  commentDetails: any;
+}
+
+const Comment: React.FC<Props> = ({ commentDetails }) => {
+  const { color, username, date, comment, likes, replies } = commentDetails;
+
   return (
     <Wrapper>
-      <IconImg color="green" />
+      <IconImg color={color} />
       <Container>
         <CommentHeader>
-          <h4>Mr. Issu Fresh</h4>
-          <p>1 year ago (edited)</p>
+          <h4>{username}</h4>
+          <p>{date} ago</p>
         </CommentHeader>
-        <CommentText>
-          If that punch hit Genos, even the writers can't bring him back
-        </CommentText>
+        <CommentText>{comment}</CommentText>
         <CommentReactions>
           <Btn>
             <i className="far fa-thumbs-up"></i>
           </Btn>
-          <p>49K</p>
+          <p>{likes}</p>
           <Btn>
             <i className="far fa-thumbs-down"></i>
           </Btn>
@@ -27,7 +31,7 @@ const Comment: React.FC = () => {
         </CommentReactions>
         <CommentReplies>
           <i className="fas fa-caret-down" />
-          <p>View 364 replies</p>
+          <p>View {replies} replies</p>
         </CommentReplies>
       </Container>
       <IconBtn icon="fas fa-ellipsis-v" />
