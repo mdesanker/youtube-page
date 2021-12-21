@@ -22,6 +22,10 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: flex-start;
   margin-right: 12px;
+
+  @media (min-width: 1000px) {
+    display: none;
+  }
 `;
 
 export default Keywords;

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ChannelInfo from "./ChannelInfo";
+import CommentSection from "./CommentSection";
 import Keywords from "./Keywords";
 import Sidebar from "./Sidebar";
 import VideoInfo from "./VideoInfo";
@@ -14,6 +15,7 @@ const Page: React.FC = () => {
         <VideoInfo />
         <ChannelInfo />
         <Keywords />
+        <CommentSection />
       </VideoWrapper>
       <Sidebar />
     </Wrapper>
