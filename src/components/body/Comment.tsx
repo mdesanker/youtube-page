@@ -25,11 +25,36 @@ const Comment: React.FC = () => {
           </Btn>
           <ReplyBtn>reply</ReplyBtn>
         </CommentReactions>
+        <CommentReplies>
+          <i className="fas fa-caret-down" />
+          <p>View 364 replies</p>
+        </CommentReplies>
       </Container>
       <IconBtn icon="fas fa-ellipsis-v" />
     </Wrapper>
   );
 };
+
+const CommentReplies = styled.div`
+  display: flex;
+  align-items: center;
+  color: #065fd4;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 0 10px;
+
+  & i {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & p {
+    margin-left: 8px;
+  }
+`;
 
 const Btn = styled.button`
   display: flex;

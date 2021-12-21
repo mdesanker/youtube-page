@@ -22,6 +22,7 @@ const CommentSection: React.FC = () => {
       </AddComment>
       <Comments>
         <Comment />
+        <Comment />
       </Comments>
     </Wrapper>
   );
@@ -31,6 +32,7 @@ const Comments = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 `;
 
 const Input = styled.input`
