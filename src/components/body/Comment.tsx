@@ -15,11 +15,50 @@ const Comment: React.FC = () => {
         <CommentText>
           If that punch hit Genos, even the writers can't bring him back
         </CommentText>
+        <CommentReactions>
+          <Btn>
+            <i className="far fa-thumbs-up"></i>
+          </Btn>
+          <p>49K</p>
+          <Btn>
+            <i className="far fa-thumbs-down"></i>
+          </Btn>
+          <ReplyBtn>reply</ReplyBtn>
+        </CommentReactions>
       </Container>
       <IconBtn icon="fas fa-ellipsis-v" />
     </Wrapper>
   );
 };
+
+const Btn = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+`;
+
+const ReplyBtn = styled(Btn)`
+  padding: 8px 16px;
+  color: #606060;
+  text-transform: uppercase;
+`;
+
+const CommentReactions = styled.div`
+  display: flex;
+  align-items: center;
+  height: 34px;
+
+  & p {
+    font-size: 12px;
+    margin-right: 8px;
+    color: #606060;
+  }
+`;
 
 const CommentText = styled.p`
   font-size: 14px;
