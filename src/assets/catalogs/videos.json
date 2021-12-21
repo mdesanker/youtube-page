@@ -1,0 +1,38 @@
+[
+  {
+    "id": ,
+    "title": "",
+    "channel": "",
+    "views": "",
+    "date": "",
+    "duration": "",
+    "thumbnail": ""
+  },
+  {
+    "id": 1,
+    "title": "Top 10 Saitama Punches One Punch Main",
+    "channel": "McMuffinn",
+    "views": "6.5M",
+    "date": "3 years",
+    "duration": "12:05",
+    "thumbnail": "video-1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "I Built This From A 1972 Popular Mechanics Magazine",
+    "channel": "Fireball Tool",
+    "views": "2.4M",
+    "date": "2 weeks",
+    "duration": "29:24",
+    "thumbnail": "video-2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "21 HORRIFIC Tech Fails they want you to forget",
+    "channel": "Mrwhosetheboss",
+    "views": "10M",
+    "date": "9 months",
+    "duration": "26:19",
+    "thumbnail": "video-3.jpg"
+  }
+]
