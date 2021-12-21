@@ -40,6 +40,9 @@ const Search = styled.input`
 `;
 
 const Container = styled.form`
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
