@@ -66,7 +66,7 @@ const ProfileImg = styled.i`
 const Wrapper = styled.div`
   width: 100%;
   padding: 16px 0;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   border-bottom: 1px solid lightgray;
 
   display: flex;

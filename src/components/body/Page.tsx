@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ChannelInfo from "./ChannelInfo";
+import Keywords from "./Keywords";
 import Sidebar from "./Sidebar";
 import VideoInfo from "./VideoInfo";
 import YoutubeEmbed from "./YoutubeEmbed";
@@ -12,6 +13,7 @@ const Page: React.FC = () => {
         <YoutubeEmbed embedId="km2OPUctni4" />
         <VideoInfo />
         <ChannelInfo />
+        <Keywords />
       </VideoWrapper>
       <Sidebar />
     </Wrapper>
