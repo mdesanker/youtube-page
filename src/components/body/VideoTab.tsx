@@ -1,21 +1,27 @@
 import React from "react";
 import styled from "styled-components";
 
-interface Props {}
+interface Props {
+  video: any;
+}
 
-const VideoTab: React.FC<Props> = () => {
+const VideoTab: React.FC<Props> = ({ video }) => {
+  const { id, title, channel, views, date, duration } = video;
+
+  const image = require(`../../assets/images/video-${id}.jpg`);
+
   return (
     <Container>
       <ImgContainer>
-        <Image alt="video" />
-        <Duration>20:26</Duration>
+        <Image src={image} alt="video" />
+        <Duration>{duration}</Duration>
       </ImgContainer>
       <DetailsContainer>
-        <Title>
-          ALL ACCESS: Canelo vs. Plant | Epilogue | Here's more text
-        </Title>
-        <Details>SHOWTIME Sports</Details>
-        <Details>1.6M views &#183; 1 month ago</Details>
+        <Title>{title}</Title>
+        <Details>{channel}</Details>
+        <Details>
+          {views} views &#183; {date} ago
+        </Details>
       </DetailsContainer>
     </Container>
   );
@@ -43,9 +49,9 @@ const Image = styled.img`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: lightblue;
+  height: 94px;
+  width: 168px;
+  object-fit: cover;
 `;
 
 const Duration = styled.p`
@@ -70,6 +76,7 @@ const Container = styled.div`
   height: 94px;
   display: flex;
   gap: 10px;
+  cursor: pointer;
 `;
 
 export default VideoTab;

@@ -1,12 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import VideoTab from "./VideoTab";
+import videos from "../../assets/catalogs/videos.json";
 
 const Sidebar: React.FC = () => {
+  // console.log(videos);
+
   return (
     <Container>
-      <VideoTab />
-      <VideoTab />
+      {videos &&
+        videos.map((video) => {
+          return <VideoTab key={video.id} video={video} />;
+        })}
     </Container>
   );
 };
