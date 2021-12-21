@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import IconBtn from "../elements/IconBtn";
+import IconImg from "../elements/IconImg";
 
 const CommentSection: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const CommentSection: React.FC = () => {
         <IconBtn text="sort by" icon="fas fa-sort-amount-down" />
       </CommentHeader>
       <AddComment>
-        <Icon />
+        <IconImg color="pink" />
         <Input
           type="text"
           name="comment"
@@ -28,13 +29,6 @@ const Input = styled.input`
   font-size: 14px;
   border: none;
   border-bottom: 1px solid lightgray;
-`;
-
-const Icon = styled.div`
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: pink;
 `;
 
 const AddComment = styled.div`
