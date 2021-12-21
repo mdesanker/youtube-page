@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "color": "blue",
+    "username": "Just Some Guy without a Mustache",
+    "date": "7 months",
+    "comment": "Genos is lucky that Saitama wasn't late for a sale, or else he would've accidentally released too much power on that punch.",
+    "likes": "10K",
+    "replies": 103
+  },
+  {
+    "id": 2,
+    "color": "orange",
+    "username": "Big Chungus",
+    "date": "7 months",
+    "comment": "Genos has some of the coolest fights of the show in general but gets absolutely folded in 99% of them",
+    "likes": "4.3K",
+    "replies": 35
+  },
+  {
+    "id": 3,
+    "color": "darkred",
+    "username": "AF1 CREED",
+    "date": "2 months",
+    "comment": "Genos strongest ability: Using the entire animation budget.\n\nSaitamas strongest ability: being able to make do with the $12 left",
+    "likes": "3.6K",
+    "replies": 26
+  },
+  {
+    "id": 4,
+    "color": "brown",
+    "username": "Mr Nemo",
+    "date": "5 months",
+    "comment": "He's not in a different kind of level Genos. He is the power level itself.",
+    "likes": "3.3K",
+    "replies": 16
+  },
+  {
+    "id": 5,
+    "color": "yellow",
+    "username": "Pedro Valente",
+    "date": "5 months",
+    "comment": "Saitama gives a little tap on Genos' head. Imagine the infinite control you need to have for that tap to not blow his head off",
+    "likes": "4.6K",
+    "replies": 43
+  },
+  {
+    "id": 6,
+    "color": "gray",
+    "username": "Mr. Issu Fresh",
+    "date": "1 year",
+    "comment": "If that punch hit Genos even the writers can't bring him back.",
+    "likes": "50K",
+    "replies": 364
+  }
+]
