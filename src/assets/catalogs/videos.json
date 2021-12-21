@@ -5,8 +5,7 @@
     "channel": "McMuffinn",
     "views": "6.5M",
     "date": "3 years",
-    "duration": "12:05",
-    "thumbnail": "video-1.jpg"
+    "duration": "12:05"
   },
   {
     "id": 2,
@@ -14,8 +13,7 @@
     "channel": "Fireball Tool",
     "views": "2.4M",
     "date": "2 weeks",
-    "duration": "29:24",
-    "thumbnail": "video-2.jpg"
+    "duration": "29:24"
   },
   {
     "id": 3,
@@ -23,8 +21,7 @@
     "channel": "Mrwhosetheboss",
     "views": "10M",
     "date": "9 months",
-    "duration": "26:19",
-    "thumbnail": "video-3.jpg"
+    "duration": "26:19"
   },
   {
     "id": 4,
@@ -32,8 +29,7 @@
     "channel": "Ars Technica",
     "views": "3.1M",
     "date": "1 year",
-    "duration": "31:37",
-    "thumbnail": "video-4.jpg"
+    "duration": "31:37"
   },
   {
     "id": 5,
@@ -41,8 +37,7 @@
     "channel": "Vanity Fair",
     "views": "9.5M",
     "date": "1 year",
-    "duration": "35:57",
-    "thumbnail": "video-5.jpg"
+    "duration": "35:57"
   },
   {
     "id": 6,
@@ -50,8 +45,7 @@
     "channel": "The Ogre",
     "views": "464K",
     "date": "4 months",
-    "duration": "8:21",
-    "thumbnail": "video-6.jpg"
+    "duration": "8:21"
   },
   {
     "id": 7,
@@ -59,8 +53,7 @@
     "channel": "SmallAnt",
     "views": "8.2M",
     "date": "4 months",
-    "duration": "36:47",
-    "thumbnail": "video-7.jpg"
+    "duration": "36:47"
   },
   {
     "id": 8,
@@ -68,8 +61,7 @@
     "channel": "Mark Rober",
     "views": "17M",
     "date": "7 days",
-    "duration": "18:28",
-    "thumbnail": "video-8.jpg"
+    "duration": "18:28"
   },
   {
     "id": 9,
@@ -77,8 +69,7 @@
     "channel": "Blacktail Studio",
     "views": "3.9M",
     "date": "1 year",
-    "duration": "17:59",
-    "thumbnail": "video-9.jpg"
+    "duration": "17:59"
   },
   {
     "id": 10,
@@ -86,7 +77,6 @@
     "channel": "Kurzgesagt - In a Nutshell",
     "views": "6M",
     "date": "7 days",
-    "duration": "12:12",
-    "thumbnail": "video-10.jpg"
+    "duration": "12:12"
   }
 ]

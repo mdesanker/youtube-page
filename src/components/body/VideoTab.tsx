@@ -52,6 +52,7 @@ const Image = styled.img`
   height: 94px;
   width: 168px;
   object-fit: cover;
+  overflow: hidden;
 `;
 
 const Duration = styled.p`
@@ -67,7 +68,7 @@ const Duration = styled.p`
 
 const ImgContainer = styled.div`
   position: relative;
-  width: 168px;
+  min-width: 168px;
   height: 94px;
 `;
 
