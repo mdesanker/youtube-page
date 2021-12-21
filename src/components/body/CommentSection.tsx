@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import IconBtn from "../elements/IconBtn";
 import IconImg from "../elements/IconImg";
+import Comment from "./Comment";
 
 const CommentSection: React.FC = () => {
   return (
@@ -19,9 +20,18 @@ const CommentSection: React.FC = () => {
           placeholder="Add a public comment..."
         />
       </AddComment>
+      <Comments>
+        <Comment />
+      </Comments>
     </Wrapper>
   );
 };
+
+const Comments = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
 
 const Input = styled.input`
   flex-grow: 1;
@@ -36,6 +46,7 @@ const AddComment = styled.div`
   align-items: flex-start;
   gap: 20px;
   height: 40px;
+  margin-bottom: 30px;
 `;
 
 const CommentHeader = styled.div`
