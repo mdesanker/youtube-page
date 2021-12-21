@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const SearchBar: React.FC = () => {
-  const submitHandler = (e: React.FormEvent<HTMLInputElement>) => {
+  const submitHandler = (e) => {
     e.preventDefault();
 
     (document.querySelector("#search") as HTMLInputElement).value = "";
   };
 
   return (
-    <Container>
+    <Container onSubmit={submitHandler}>
       <Search type="text" name="search" id="search" placeholder="Search" />
       <Button>
         <i className="fas fa-search" />
